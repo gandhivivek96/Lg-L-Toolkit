@@ -59,6 +59,7 @@ echo This will take about 1 minute (max 2)
 @adb shell cp /tmp/supersu/common/Superuser.apk /system/app/Superuser.apk
 @adb shell cp /tmp/supersu/common/install-recovery.sh /system/etc/install-recovery.sh
 @adb shell cp /tmp/supersu/common/99SuperSUDaemon /system/etc/init.d/99SuperSUDaemon
+@adb shell cp /tmp/supersu/common/Superuser.apk /system/app/
 @adb shell cp /Maps.apk /system/app/Maps.apk
 @adb shell cp /GMS_Maps.apk /system/app/GMS_Maps.apk
 @adb shell cp /YouTube.apk /system/app/YouTube.apk
