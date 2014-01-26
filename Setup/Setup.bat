@@ -47,6 +47,7 @@ echo.
 pause
 color 2
 cls
+@md C:\Android
 @md C:\LgTool
 @md C:\LgTool\Common
 @md C:\LgTool\Backup
