@@ -51,18 +51,14 @@ cls
 @md C:\LgTool
 @md C:\LgTool\Common
 @md C:\LgTool\Backup
-@md C:\LgTool\Lg-l3
-@md C:\LgTool\Lg-l5
-@md C:\LgTool\Lg-l7
 @md C:\LgTool\Pulled
 @md C:\LgTool\Pulled\Camera\
 @md C:\LgTool\Common\Root
 @copy Drivers\* C:\Android\
-@copy L3\* C:\LgTool\Lg-l3\
-@copy L5\* C:\LgTool\Lg-l5\
-@copy L7\* C:\LgTool\Lg-l7\
+@copy Lg-l3 C:\LgTool\
+@copy Lg-l5 C:\LgTool\
+@copy Lg-l7 C:\LgTool\
 @copy common\*.bat C:\LgTool\common\
-@copy root\* C:\LgTool\Common\Root\
+@copy Root C:\LgTool\Common\
 @copy common\Start.exe C:\LgTool\
 @echo Done!
-
