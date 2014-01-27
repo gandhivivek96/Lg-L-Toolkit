@@ -54,7 +54,7 @@ cls
 @md C:\LgTool\Pulled
 @md C:\LgTool\Pulled\Camera\
 @md C:\LgTool\Common\Root
-@copy Drivers\* C:\Android\
+@copy Driver\* C:\Android\
 @copy Lg-l3 C:\LgTool\
 @copy Lg-l5 C:\LgTool\
 @copy Lg-l7 C:\LgTool\
