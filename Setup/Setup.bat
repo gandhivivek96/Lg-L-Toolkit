@@ -61,7 +61,7 @@ echo Extracting Files
 @copy Lg-l5 C:\LgTool\
 @copy Lg-l7 C:\LgTool\
 @copy common\*.bat C:\LgTool\Common\
-@copy root C:\LgTool\Common\
+@copy Root C:\LgTool\Common\
 echo Done! !
 pause
 C:\LgTool\Start.exe
