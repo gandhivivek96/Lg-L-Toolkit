@@ -67,7 +67,7 @@ pause
 C:\LgTool\Start.exe
 cls
 color 42
-echo If you see this message, please download again LgTool, or make sure you have placed all the files in the same directory....
+echo If you see this message, is because Lg Tool was not installed well OR you closed Lg L toolkit
 pause
 exit
 
