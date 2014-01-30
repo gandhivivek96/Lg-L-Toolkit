@@ -47,18 +47,27 @@ echo.
 pause
 color 2
 cls
-@md C:\Android
-@md C:\LgTool
-@md C:\LgTool\Common
-@md C:\LgTool\Backup
-@md C:\LgTool\Pulled
-@md C:\LgTool\Pulled\Camera\
-@md C:\LgTool\Common\Root
-@copy Driver\* C:\Android\
+pause
+echo Setting up your pc....
+@mkdir C:\LgTool
+@mkdir C:\LgTool\Backup
+@mkdir C:\LgTool\Common
+@mkdir C:\LgTool\Pulled
+@mkdir C:\LgTool\Pulled\Camera\
+@mkdir C:\Android\
+echo Extracting Files
+@copy Start.exe C:\LgTool\
 @copy Lg-l3 C:\LgTool\
 @copy Lg-l5 C:\LgTool\
 @copy Lg-l7 C:\LgTool\
-@copy common\*.bat C:\LgTool\common\
-@copy Root C:\LgTool\Common\
-@copy common\Start.exe C:\LgTool\
-@echo Done!
+@copy common\*.bat C:\LgTool\Common\
+@copy root C:\LgTool\Common\
+echo Done! !
+pause
+C:\LgTool\Start.exe
+cls
+color 42
+echo If you see this message, please download again LgTool, or make sure you have placed all the files in the same directory....
+pause
+exit
+
