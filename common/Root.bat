@@ -3,12 +3,14 @@ cls
 cls
 adb wait-for-device
 echo This will take about 1 minute (max 2)
-@adb root
 @adb wait-for-device
 @adb reboot recovery
 @adb wait-for-device
-@adb shell mount /system
-@adb shell mount /data
+echo Go To Mount&Storage
+echo Select Mount /system and Mount /data, then
+pause
+@adb shell mount -rw -o,remount /system
+@adb shell mount -rw -o,remount /data
 @adb shell rm -f /system/bin/su
 @adb shell rm -f /system/xbin/su
 @adb shell rm -f /system/xbin/daemonsu
