@@ -1,38 +1,12 @@
 cls
 @echo off
-:rootwarning
 cls
-echo.
-echo Rooting requires installed recovery first
-echo.
-echo Did you install recovery?
-echo.
-echo 1. Yes, go ahead and root
-echo 2. No, take me back to menu to install recovery
-echo.
-set /p S= :?
-if %S%==1 goto root
-if %S%==2 :: start.exe
-echo.
-echo Invalid Input? Try again!...
-echo.
-pause 
-goto rootwarning
-
-
-:root
-cls
-@adb wait-for-device
-echo.
+adb wait-for-device
 echo This will take about 1 minute (max 2)
+@adb wait-for-device
 @adb reboot recovery
-echo.
-echo When you boot into Recovery
-echo Unplug and plug in again your USB Cable
-echo Press Enter when ready.
-pause >nul
-echo.
-echo Go To Mount and Storage
+@adb wait-for-device
+echo Go To Mount&Storage
 echo Select Mount /system and Mount /data, then
 pause
 @adb shell mount -rw -o,remount /system
