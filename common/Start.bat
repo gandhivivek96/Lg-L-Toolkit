@@ -81,7 +81,7 @@ echo.
 echo.
 echo 1- Install
 echo 2- Unlock Bootloader
-echo 3- Root
+echo 3- Root (Requires Recovery Installed First )
 echo 4- Backup and Restore
 echo 5- Sync
 echo.
