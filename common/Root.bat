@@ -111,4 +111,3 @@ pause
 echo Done!
 @adb reboot
 pause
-goto ::start.exe
